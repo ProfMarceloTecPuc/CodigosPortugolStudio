@@ -1,0 +1,29 @@
+//Algoritmo de calculadora de escolha
+programa {
+   funcao inicio() {
+      caracter operador
+      inteiro numero1, numero2
+      escreva("Escolha um número: ")
+      leia(numero1)
+      escreva("Escolha outro número: ")
+      leia(numero2)
+      escreva("Escolha um operador: [+] [-] [*] [/] :")
+      leia(operador)
+      escolha(operador){
+         caso '+':
+            escreva (numero1, " + ", numero2, " = ", numero1+numero2)
+            pare
+         caso '-':
+            escreva (numero1, " - ", numero2, " = ", numero1-numero2)
+            pare
+         caso '/':
+            escreva (numero1, " / ", numero2, " = ", numero1/numero2)
+            pare
+         caso '*':
+            escreva (numero1, " * ", numero2, " = ", numero1*numero2)
+            pare
+         caso contrario:
+            escreva("Operador inválido")
+      }
+   }
+}

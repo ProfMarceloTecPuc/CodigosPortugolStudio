@@ -1,0 +1,21 @@
+//Algoritmo de votação
+programa {
+   funcao inicio() {
+      inteiro idade
+      escreva("Digite uma idade: ")
+      leia(idade)
+      se (idade<16){
+         escreva("Não pode votar")
+      } senao {
+         se(idade < 18){
+            escreva("Voto opcional")
+         } senao {
+            se(idade < 70) {
+               escreva("Voto obrigatório")
+            } senao {
+               escreva("Voto opcional")
+            }
+         }
+      }
+   }
+}
